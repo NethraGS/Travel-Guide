@@ -1,0 +1,17 @@
+# netlify.toml
+
+[build]
+  command = "echo 'No build command specified'"
+  publish = ""
+
+# Redirects for Single Page Application (SPA) routing
+[[redirects]]
+  from = "/*"
+  to = "/landingpage.html"
+  status = 200
+
+# Basic headers configuration
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
