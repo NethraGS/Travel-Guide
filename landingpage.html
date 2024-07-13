@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌴Travel Guide</title>
+    <link rel="stylesheet" href="travelguide.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles for fonts */
+        body, html {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .intro-text {
+            font-family: 'Segoe Script', sans-serif; /* Slight cursive font */
+            font-size: 20px;
+        }
+
+        .feature h3, .blog h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        /* Styles for the Contact section */
+        #contact {
+            background-color: #f0f0f0; /* Light background color */
+            padding: 50px 0; /* Adjust padding as needed */
+            text-align: center;
+        }
+
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            margin-top: 20px; /* Adjust margin as needed */
+        }
+
+        .contact-icons .icon {
+            width: 50px;
+            height: 50px;
+            filter: invert(30%); /* Adjust invert for icon opacity */
+            transition: transform 0.3s;
+        }
+
+        .contact-icons .icon:hover {
+            transform: scale(1.1);
+            filter: invert(0%);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>EXPLORE THE WORLD WITH US</h1>
+            <nav>
+                <ul>
+                    <li><a href="#intro">About Me</a></li>
+                    <li><a href="#destinations">Discover Destinations</a></li>
+                    <li><a href="#services">Explore Our Services</a></li>
+                    <li><a href="#blogs">Read Our Blogs</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <video autoplay muted loop id="hero-video">
+            <source src="hero-vedio.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h2>Unleash Your Wanderlust</h2>
+            <p>Embark on unforgettable journeys across the globe with our expert travel guides.</p>
+            <a href="#destinations" class="btn">Explore Destinations</a>
+        </div>
+    </section>
+
+    <section id="intro">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2>🤩Thanks for looking!!</h2>
+                    <h2>Hey there, I'm Nethra</h2>
+                    <p>Ever since I can remember, I've been dreaming of embarking on a world tour, exploring beyond boundaries, and seeking adventures that last a lifetime. This website is my humble creation, a place where I share my journey and passions with you. Join me as I chase dreams and create stories worth telling.</p>
+                </div>
+                <div class="intro-image">
+                    <img src="girl-travelling.jpg" alt="Girl Traveling">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="destinations" style="background-color: #c1eccf;">
+        <div class="container">
+            <h2>Featured Destinations</h2>
+            <div class="destinations-grid">
+                <div class="destination">
+                    <img src="paris.jpg" alt="Paris, France">
+                    <div class="destination-text">
+                        <h3>Paris, France</h3>
+                        <p>Discover the enchanting City of Lights, gaze upon the Eiffel Tower, and wander through the iconic Louvre Museum.</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="tokyo.jpg" alt="Tokyo, Japan">
+                    <div class="destination-text">
+                        <h3>Tokyo, Japan</h3>
+                        <p>Experience the vibrant culture of Tokyo, indulge in delicious sushi, and admire the beauty of cherry blossoms in full bloom.</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="santorini.jpg" alt="Santorini, Greece">
+                    <div class="destination-text">
+                        <h3>Santorini, Greece</h3>
+                        <p>Immerse yourself in the breathtaking views of white-washed buildings against the backdrop of the Aegean Sea, and savor authentic Mediterranean cuisine.</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="nyc.jpg" alt="New York City, USA">
+                    <div class="destination-text">
+                        <h3>New York City, USA</h3>
+                        <p>Explore the bustling streets of the Big Apple, discover world-class museums, and indulge in diverse culinary delights.</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="machu-picchu.jpg" alt="Machu Picchu, Peru">
+                    <div class="destination-text">
+                        <h3>Machu Picchu, Peru</h3>
+                        <p>Embark on a journey to the ancient Incan citadel nestled high in the Andes mountains, offering stunning panoramic views and rich historical heritage.</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="bali.jpg" alt="Bali, Indonesia">
+                    <div class="destination-text">
+                        <h3>Bali, Indonesia</h3>
+                        <p>Relax on pristine beaches, explore ancient temples, and experience the vibrant cultural traditions of Bali.</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="rome.jpg" alt="Rome, Italy">
+                    <div class="destination-text">
+                        <h3>Rome, Italy</h3>
+                        <p>Walk through ancient ruins, admire Renaissance art, and savor delicious Italian cuisine in the heart of Rome.</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="cario.jpg" alt="Cairo, Egypt">
+                    <div class="destination-text">
+                        <h3>Cairo, Egypt</h3>
+                        <p>Explore the Great Pyramids, cruise the Nile, and immerse yourself in the rich history of Cairo.</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="sydney.jpg" alt="Sydney, Australia">
+                    <div class="destination-text">
+                        <h3>Sydney, Australia</h3>
+                        <p>Catch a show at the iconic Sydney Opera House, relax on Bondi Beach, and explore the vibrant city life.</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="cape-town.jpg" alt="Cape Town, South Africa">
+                    <div class="destination-text">
+                        <h3>Cape Town, South Africa</h3>
+                        <p>Hike up Table Mountain, visit the historic Robben Island, and enjoy the scenic beauty of Cape Town.</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="reykjavik.jpg" alt="Reykjavik, Iceland">
+                    <div class="destination-text">
+                        <h3>Reykjavik, Iceland</h3>
+                        <p>Experience stunning natural landscapes, soak in geothermal hot springs, and witness the awe-inspiring Northern Lights.</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="barcelona.jpg" alt="Barcelona, Spain">
+                    <div class="destination-text">
+                        <h3>Barcelona, Spain</h3>
+                        <p>Marvel at Gaudí's architectural masterpieces, stroll along La Rambla, and savor delicious tapas in Barcelona.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>💜Services</h2>
+            <div class="feature">
+                <h3>Customized Tours✈️</h3>
+                <p>Let us create a personalized itinerary tailored to your dreams and interests, ensuring an unforgettable journey.</p>
+            </div>
+            <div class="feature">
+                <h3>Travel Packages🧳</h3>
+                <p>Choose from our selection of all-inclusive travel packages designed to provide a seamless and stress-free travel experience.</p>
+            </div>
+            <div class="feature">
+                <h3>Group Travel Experiences🫂</h3>
+                <p>Embark on group adventures with friends or join like-minded travelers on our group tour experiences.</p>
+            </div>
+            <div class="feature">
+                <h3>Special Occasions🎉</h3>
+                <p>Celebrate milestones with our curated packages for anniversaries, honeymoons, and special events.</p>
+            </div>
+            <div class="feature">
+                <h3>24/7 Customer Support🆘</h3>
+                <p>Rest assured with around-the-clock customer support, ensuring assistance whenever you need it.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="blogs">
+        <div class="container">
+            <h2>Latest Blogs</h2>
+            <div class="blog">
+                <h3>Top 10 Destinations to Visit in 2024</h3>
+                <p>Explore our list of the top travel destinations for 2024, including insider tips and must-see attractions.</p>
+                <a href="https://tripadvisor.mediaroom.com/Travellers-Choice-Best-of-the-Best-Destinations-2024" class="btn" target="_blank">Read More</a>
+            </div>
+            <div class="blog">
+                <h3>Ultimate Guide to Backpacking Through Europe</h3>
+                <p>Discover everything you need to know about backpacking across Europe, from budget tips to hidden gems.</p>
+                <a href="https://www.nomadicmatt.com/travel-blogs/backpacking-europe-guide/" class="btn" target="_blank">Read More</a>
+            </div>
+            <!-- Add more blogs as needed -->
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <h1 style="font-size: 3em;">Contact</h1>
+        <div class="contact-icons">
+            <a href="https://www.linkedin.com/in/nethra-g-s-49aaa024b" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="icon">
+            </a>
+            <a href="mailto:nethra120304@gmail.com">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" class="icon">
+            </a>
+            <a href="tel:+918248856630">
+                <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone" class="icon">
+            </a>
+            <a href="https://instagram.com/_.nethra.03" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" class="icon">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Other footer content -->
+        <p class="footer-copyright">&copy; 2024 Explore the World with Nethra. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Ensure video plays when document is visible
+        document.addEventListener("visibilitychange", function() {
+            var video = document.getElementById("hero-video");
+            if (document.visibilityState === "visible") {
+                video.play().catch(function(error) {
+                    console.log("Video playback failed:", error);
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
